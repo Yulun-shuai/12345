@@ -7,17 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        span {
+        div {
+            margin-top: 100px;
+            text-align: center;
             font-size: 50px;
             background-color: pink;
+            animation: identifier 3s linear infinite;
+        }
+        
+        @keyframes identifier {
+            100% {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
 
 <body>
-    <span>宋伟智障啊</span>
+    <div>宋伟智障啊</div>
     <script>
-        var span = document.querySelector('span');
+        var div = document.querySelector('div');
         span.onclick = function name(params) {
             this.innerHTML = '真是个傻逼';
 
