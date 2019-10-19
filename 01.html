@@ -12,6 +12,9 @@
             text-align: center;
             font-size: 50px;
             background-color: pink;
+        }
+        
+        .identifier {
             animation: identifier 3s linear infinite;
         }
         
@@ -29,7 +32,7 @@
         var div = document.querySelector('div');
         div.onclick = function name(params) {
             setTimeout(() => {
-                div.innerHTML = '真是个傻逼';
+                div.className = 'identifier';
             }, 2000)
         }
     </script>
